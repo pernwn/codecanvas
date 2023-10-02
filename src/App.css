@@ -1,0 +1,131 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+  
+}
+
+p{
+  color:#420101;
+}
+
+a{
+  text-decoration: none;
+  color:#6f0202;
+
+  transition: 1s ease;
+}
+
+a:hover{
+  color:rgba(7, 100, 100, 0.7);
+}
+
+img{
+  width:100%;
+}
+
+.description-me{
+  display:flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+
+.about-info, .intro{
+  padding:2% 5%; 
+}
+
+.portrait{
+  width:50%;
+  display: flex;
+  align-items: center;
+  padding:5%;
+
+}
+
+.post-item {
+  padding:0 27% 10%; 
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+}
+
+
+
+header{
+  width:100%;
+  padding-top: 10%;
+}
+
+nav{
+  z-index: 9; 
+  height:auto;
+  background-color:#f1f0f0;
+  position:fixed;
+  top:0;
+  width:100%;
+
+  padding:1% 5% 0;
+
+  display:flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+
+h1, h2, h3, h4{
+  color: #6f0202;
+}
+
+.listItem{
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+}
+
+
+
+
+.logo{
+  width:5em;
+}
+
+.firstSection{
+  display:flex;
+  flex-direction: row;
+  padding:0 5% 10%;
+}
+
+.abMe{
+  display:flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+}
+
+
+
+.skills{
+  display:grid;
+  grid-template-columns: auto auto auto;
+  text-align: center;
+  padding:5% 0;
+}
+
+.mySkills, .shortIntro{
+  text-align: center;
+  margin:0 10%;
+}
+
+.projects{
+  margin-bottom:10%;
+}
+
+footer{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+
+
+
