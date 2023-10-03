@@ -10,15 +10,15 @@ export default function Skills(props) {
 
     return (
         <List
-            sx={{ width: '100%', bgcolor: 'background.paper' }}
+            sx={{ width: '100%', bgcolor: '#f8f8f8'}}
         >
-            <div className="listItem">
+            <div className="listItem" style={{display:"flex", flexDirection:"column", alignItems:"center" }}>
                 <ListItemIcon>
                     {props.image}
                 </ListItemIcon>
 
                 <ListItem>
-                    <ListItemText primary={props.name} />
+                    <ListItemText primary={props.name} style={{color: "#6f0202"}}/>
                 </ListItem>
             </div>
 

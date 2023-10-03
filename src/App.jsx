@@ -6,16 +6,6 @@ import About from "./pages/about";
 import Nav from "./components/nav";
 import Footer from "./components/footer";
 
-import { createTheme, ThemeProvider } from '@mui/material/styles';
-import CssBaseline from '@mui/material/CssBaseline';
-
-const theme = createTheme({
-  palette: {
-    background: {
-      default: "#f8f8f8"
-    }
-  }
-});
 
 
 
@@ -27,10 +17,11 @@ import '@fontsource/roboto/700.css';
 
 
 function App() {
+
   return (
     
-    <ThemeProvider theme={theme}>
-      <CssBaseline />
+    <>
+
       <Nav />
 
       <Routes>
@@ -40,7 +31,7 @@ function App() {
       </Routes>
 
       <Footer />
-      </ThemeProvider>
+      </>
     
   )
 }

@@ -5,21 +5,34 @@ import Typography from '@mui/material/Typography';
 import Link from '@mui/material/Link';
 import Button from '@mui/material/Button';
 import { styled } from '@mui/material/styles';
-import Divider from '@mui/material/Divider';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import CssBaseline from '@mui/material/CssBaseline';
+
+import Skills from "../components/list";
+
+import html from "../assets/icons/html.svg";
+import css from "../assets/icons/css.svg";
+import js from "../assets/icons/js.svg";
+import react from "../assets/icons/react.svg";
+import digia from "../assets/icons/digitalart.svg";
+import xd from "../assets/icons/adobexd.svg";
+import ps from "../assets/icons/photoshop.svg";
+import figma from "../assets/icons/figma.svg";
+
+
+
 
 const theme = createTheme({
     palette: {
         primary: {
-            main:"#6f0202",
+            main: "#6f0202",
         },
 
-      secondary: {
-        main: "#A00b0b",
-      } 
+        secondary: {
+            main: "#A00b0b",
+        }
     },
-  });
+});
 
 export default function About() {
     const ColorButton = styled(Button)(({ theme }) => ({
@@ -46,32 +59,55 @@ export default function About() {
     return (
         <ThemeProvider theme={theme}>
             <CssBaseline />
-        <body>
-        <main style={{display:"flex", flexDirection:"column"}}>
+            <body>
+                <main className="about" style={{ display: "flex", flexDirection: "column", marginBottom:"10%" }}>
+                    <section>
+                        <Typography component="h1"
+                            variant="h1"
+                            align="center"
+                            color="#6f0202"
+                            className="about-header"
 
-            <Typography component="h1"
-                variant="h1"
-                align="center"
-                color="#6f0202"
-                className="about-header"
-                >
-                About Me
-            </Typography>
 
-            
-            <Typography paragraph className="post-item" align="justify" >
-                {posts.map(post => (
-                    <PostItem key={post.id} post={post}  />
-                ))}
+                        >
+                            About Me
+                        </Typography>
 
-            <Link href="../vwCV.pdf" target="_blank" style={{ display: "flex", justifyContent: "center", textDecoration: "none", marginTop:"2em" }}><ColorButton variant="contained">View my full resume</ColorButton></Link>
 
-            </Typography>
+                        <section className="skillsAb" style={{ display: "flex", flexDirection: "row", alignItems: "center", padding: "0 10em"}}>
+                                <Skills image={<img src={html} alt="html icon" className="skillName" />} />
+                                <Skills image={<img src={css} alt="css icon" className="skillName" />} />
+                                <Skills image={<img src={js} alt="javascript icon" className="skillName" />} />
+                                <Skills image={<img src={react} alt="react icon" className="skillName" />} />
 
-            <Divider style={{ backgroundColor: "rgba(7, 100, 100, 0.3)" }} variant="middle" />
+                                <Skills image={<img src={digia} alt="digital art icon" className="skillName" />} />
+                                <Skills image={<img src={xd} alt="adobe xd icon" className="skillName" />} />
+                                <Skills image={<img src={ps} alt="photoshop icon" className="skillName" />} />
+                                <Skills image={<img src={figma} alt="figma icon" className="skillName" />} />
+                        </section>
 
-        </main>
-        </body>
+
+
+
+                        <Typography paragraph className="post-item" align="justify" >
+                            {posts.map(post => (
+                                <PostItem key={post.id} post={post} />
+                            ))}
+
+                            <Link href="/public/vwCV.pdf" target="_blank" style={{ display: "flex", justifyContent: "center", textDecoration: "none", marginTop: "2em" }}><ColorButton variant="contained">View my full resume</ColorButton></Link>
+
+                        </Typography>
+                    </section>
+
+
+
+
+
+
+                </main>
+
+
+            </body>
         </ThemeProvider>
     )
 }

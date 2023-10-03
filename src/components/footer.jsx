@@ -9,7 +9,7 @@ function Copyright() {
   return (
     <Typography variant="body2" color="text.secondary">
       {'Copyright © '}
-      <Link color="inherit" href="https://portfolio.vicw.dk/">
+      <Link color="inherit" href="https://portfolio.vicw.dk/index.html">
         VictoriaW
       </Link>{' '}
       {new Date().getFullYear()}
@@ -21,7 +21,7 @@ export default function Footer() {
   return (
     <footer>
 
-      <Box sx={{ bgcolor: 'background.paper', p: 6 }}  component="footer" align="center" style={{display:"flex", justifyContent:"space-between", width:"100%"}}>
+      <Box sx={{ bgcolor: '#f8f8f8', p: 6 }}  component="footer" align="center" style={{display:"flex", justifyContent:"space-between", width:"100%"}}>
         <div className="connect" style={{display:"flex"}}>
           <div>
 
