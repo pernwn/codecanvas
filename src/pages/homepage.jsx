@@ -138,7 +138,7 @@ export default function HomePage() {
 
             <section className="projects">
                 <Projects />
-                <Link href="/public/vwCV.pdf" target="_blank" style={{ display: "flex", justifyContent: "center", textDecoration: "none", marginTop:"2em" }}><ColorButton variant="contained">View my full resume</ColorButton></Link>
+                <Link href="vwCV.pdf" target="_blank" style={{ display: "flex", justifyContent: "center", textDecoration: "none", marginTop:"2em" }}><ColorButton variant="contained">View my full resume</ColorButton></Link>
 
             </section>
 
