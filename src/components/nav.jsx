@@ -41,9 +41,9 @@ export default function Nav() {
                 >
                     <ButtonGroup size="large" variant="text">
                         <NavLink to="/"><Button>Home</Button></NavLink>
-                        <NavLink to="/about"><Button>About</Button></NavLink>
-                        <NavLink to="/websites"><Button>Artworks</Button></NavLink>
                         <NavLink to="/artworks"><Button>Websites</Button></NavLink>
+                        <NavLink to="/websites"><Button>Artworks</Button></NavLink>
+                        <NavLink to="/about"><Button>About</Button></NavLink>    
                     </ButtonGroup>
                 </Box>
 
